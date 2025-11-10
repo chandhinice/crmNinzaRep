@@ -14,7 +14,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>smoke_suite.testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
