@@ -54,7 +54,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>smoke_suite.testng.xml</suiteXmlFile>
+            <suiteXmlFile>groupexecution.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

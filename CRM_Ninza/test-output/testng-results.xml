@@ -1,100 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Report Configuration]]>
     </line>
     <line>
-      <![CDATA[Successfully Created the campaign Market40]]>
+      <![CDATA[Successfully Created the CampaignMarket]]>
+    </line>
+    <line>
+      <![CDATA[======CreateCampTest===SUCCESS=========]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Created the campaign Market]]>
+    </line>
+    <line>
+      <![CDATA[======createCampWithExpDateTest===SUCCESS=========]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-11-09T21:21:43 IST" name="Suite" finished-at="2025-11-09T21:22:05 IST" duration-ms="22074">
+  <suite started-at="2025-11-10T16:43:53 IST" name="Suite" finished-at="2025-11-10T16:44:26 IST" duration-ms="32968">
     <groups>
+      <group name="SmokeTest">
+        <method signature="CreateCampWithExpectedCloseDateTest.createCampWithExpDateTest()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" name="createCampWithExpDateTest" class="CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest"/>
+        <method signature="CreateCampaignWithMandatoryFeildsTest.CreateCampTest()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" name="CreateCampTest" class="CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="CreateCampWithExpectedCloseDateTest.createCampWithExpDateTest()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" name="createCampWithExpDateTest" class="CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest"/>
+        <method signature="CreateCampaignWithMandatoryFeildsTest.CreateCampTest()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" name="CreateCampTest" class="CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-11-09T21:21:43 IST" name="Test" finished-at="2025-11-09T21:22:05 IST" duration-ms="22074">
-      <class name="crm.SampleTest.CreateCampTest">
-        <test-method is-config="true" signature="ConfigBS()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:21:43 IST" name="ConfigBS" finished-at="2025-11-09T21:21:43 IST" duration-ms="18" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ConfigBS -->
-        <test-method is-config="true" signature="configBT()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:21:43 IST" name="configBT" finished-at="2025-11-09T21:21:43 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBT -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:21:43 IST" name="configBC" finished-at="2025-11-09T21:21:45 IST" duration-ms="2280" status="PASS">
+    <test started-at="2025-11-10T16:43:53 IST" name="Test" finished-at="2025-11-10T16:44:26 IST" duration-ms="32968">
+      <class name="CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" started-at="2025-11-10T16:44:10 IST" name="configBC" finished-at="2025-11-10T16:44:12 IST" duration-ms="2015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:21:45 IST" name="ConfigBM" finished-at="2025-11-09T21:21:46 IST" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" started-at="2025-11-10T16:44:12 IST" name="ConfigBM" finished-at="2025-11-10T16:44:12 IST" duration-ms="550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigBM -->
-        <test-method signature="createCampTest()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:21:46 IST" name="createCampTest" finished-at="2025-11-09T21:21:54 IST" duration-ms="7628" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Failed to Create the campaign Market40 expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failed to Create the campaign Market40 expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at crm.SampleTest.CreateCampTest.createCampTest(CreateCampTest.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createCampWithExpDateTest()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" started-at="2025-11-10T16:44:12 IST" name="createCampWithExpDateTest" finished-at="2025-11-10T16:44:14 IST" duration-ms="1385" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Successfully Created the campaign Market40]]>
+              <![CDATA[Successfully Created the campaign Market]]>
+            </line>
+            <line>
+              <![CDATA[======createCampWithExpDateTest===SUCCESS=========]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCampTest -->
-        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:21:54 IST" name="ConfigAM" finished-at="2025-11-09T21:22:05 IST" duration-ms="10814" status="PASS">
+        </test-method> <!-- createCampWithExpDateTest -->
+        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" started-at="2025-11-10T16:44:14 IST" name="ConfigAM" finished-at="2025-11-10T16:44:25 IST" duration-ms="11140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAM -->
-        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:22:05 IST" name="ConfigAC" finished-at="2025-11-09T21:22:05 IST" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest@43f02ef2]" started-at="2025-11-10T16:44:25 IST" name="ConfigAC" finished-at="2025-11-10T16:44:26 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAC -->
-        <test-method is-config="true" signature="ConfigAT()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:22:05 IST" name="ConfigAT" finished-at="2025-11-09T21:22:05 IST" duration-ms="1" status="PASS">
+      </class> <!-- CRM_Ninza.createcampaign.CreateCampWithExpectedCloseDateTest -->
+      <class name="CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest">
+        <test-method is-config="true" signature="ConfigBS()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:43:53 IST" name="ConfigBS" finished-at="2025-11-10T16:43:53 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBS -->
+        <test-method is-config="true" signature="configBT()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:43:53 IST" name="configBT" finished-at="2025-11-10T16:43:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBT -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:43:53 IST" name="configBC" finished-at="2025-11-10T16:43:55 IST" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:43:55 IST" name="ConfigBM" finished-at="2025-11-10T16:43:56 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method signature="CreateCampTest()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:43:56 IST" name="CreateCampTest" finished-at="2025-11-10T16:43:58 IST" duration-ms="2357" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully Created the CampaignMarket]]>
+            </line>
+            <line>
+              <![CDATA[======CreateCampTest===SUCCESS=========]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateCampTest -->
+        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:43:58 IST" name="ConfigAM" finished-at="2025-11-10T16:44:09 IST" duration-ms="11056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigAM -->
+        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:44:09 IST" name="ConfigAC" finished-at="2025-11-10T16:44:10 IST" duration-ms="577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigAC -->
+        <test-method is-config="true" signature="ConfigAT()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:44:26 IST" name="ConfigAT" finished-at="2025-11-10T16:44:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAT -->
-        <test-method is-config="true" signature="ConfigAS()[pri:0, instance:crm.SampleTest.CreateCampTest@338fc1d8]" started-at="2025-11-09T21:22:05 IST" name="ConfigAS" finished-at="2025-11-09T21:22:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="ConfigAS()[pri:0, instance:CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest@3de8f619]" started-at="2025-11-10T16:44:26 IST" name="ConfigAS" finished-at="2025-11-10T16:44:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAS -->
-      </class> <!-- crm.SampleTest.CreateCampTest -->
+      </class> <!-- CRM_Ninza.createcampaign.CreateCampaignWithMandatoryFeildsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
