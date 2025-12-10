@@ -72,7 +72,7 @@ public void onTestStart(ITestResult result)
 						spark.config().setDocumentTitle("Ninza_CRM");
 								 spark.config().setReportName("NinzaCRMReport");
 								 spark.config().setTheme(Theme.DARK);
-						//system Configuration details	
+								//system Configuration details	
 								 report= new ExtentReports();
 								 report.attachReporter(spark);
 								 report.setSystemInfo("OS","Windows11");
