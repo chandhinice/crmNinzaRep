@@ -24,11 +24,7 @@
     <version>4.1.2</version>
 </dependency>
 
-  	<dependency>
-  		<groupId>com.hp.demowebshop</groupId>
-  		<artifactId>DemoWebshop-Automation</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  	
   	<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 <dependency>
     <groupId>com.googlecode.json-simple</groupId>
